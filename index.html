@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="css/meuestilo.css">
+    <title>Currículo - Perfil</title>
+</head>
+
+<body>
+    <header>
+        <!-- Menu organizado por sections ( # = referencia)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#principal">Apresentação</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#escolaridade">Escolaridade</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#idiomas">Idiomas</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#redes">Redes Sociais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="header">MINHA PÁGINA PESSOAL</h1>
+        <!--picture para a imagem mudar de tamanho conforme a tela-->
+        <picture>
+            <source media="(max-width:550px)" srcset="Imagens/thais_newP.png">
+            <source media="(max-width: 1100px)" srcset="Imagens/thais_newM.png">
+            <img src="Imagens/thais_newG.png" alt="minhafoto">
+        </picture>
+        <!--INFORMAÇÕES
+        Cada categoria da minha página está divida por section-->
+        <section id="principal">
+            <h2 class="titulo">Apresentação</h2>
+            <ul class="prin">
+                <li> Thaís de Lima Peixoto</li>
+                <li>18 anos</li>
+                <li>Estagiária de Informática</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2 class="titulo">Contato</h2>
+            <ul class="prin">
+                <li> Rua Virgínia de Miranda, 827 - Casa 32 - São Paulo</li>
+                <li> thatha.peixoto2003@gmail.com</li>
+                <li> (11) 2254-7213</li>
+                <li> (11) 962338751</li>
+            </ul>
+        </section>
+
+        <section id="objetivo">
+            <h2 class="titulo">Objetivo</h2>
+            <p class="par">Continuar no mercado de trabalho, adquirir mais experiência, aprender de, maneira prática,
+                como é trabalhar na minha área de aprendizado, T.I. </p>
+            <p class="par">Me interesso pelas vagas de Aprendiz em Informática, Estagiário em Informática,
+                Desenvolvedor Jr.
+            </p>
+        </section>
+
+        <section id="escolaridade">
+            <h2 class="titulo">Escolaridade</h2>
+            <p class="par">Atualmente estou cursando o 4º ano do Ensino
+                Técnico em Informática integrado ao Ensino Médio no
+                Instituto Federal de Educação, Ciência
+                e Tecnologia de São Paulo (IFSP) – Campus São Paulo.</p>
+        </section>
+
+        <section id="cursos">
+            <h2 class="titulo">Cursos</h2>
+            <ul class="prin">
+                <li>Latin Code Week - 2018: Grupo Vencedor</li>
+                <li>Latin Code Week - 2019</li>
+                <li>Startup In School - 2019</li>
+            </ul>
+        </section>
+
+        <section id="idiomas">
+            <h2 class="titulo">Idiomas</h2>
+            <ul class="prin">
+                <li>Português - Nativo</li>
+                <li>Inglês - Intermediário</li>
+                <li>Espanhol - Básico </li>
+            </ul>
+        </section>
+
+        <section id="idiomas">
+            <h2 class="titulo">Idiomas</h2>
+            <ul class="prin">
+                <li>Português - Nativo</li>
+                <li>Inglês - Intermediário</li>
+                <li>Espanhol - Básico </li>
+            </ul>
+        </section>
+
+        <section id="conhecimentos">
+            <h2 class="titulo">Conhecimentos</h2>
+            <p class="par">Pacote Office</p>
+            <ul class="prin">
+                <li>Power Point - Intermediário</li>
+                <li>Word - Intermediário</li>
+                <li>Excel - Básico</li>
+                <li>Acess - Básico</li>
+            </ul>
+            <p class="par">Linguagens de Programação:</p>
+            <ul class="prin">
+                <li>C - Intermediário</li>
+                <li>Java - Intermediário</li>
+                <li>C# - Básico</li>
+                <li>HTML - Intermediário</li>
+                <li>CSS - Intermediário</li>
+                <li>JavaScript - Básico</li>
+            </ul>
+        </section>
+
+        <!--Funções de javascript embutidas nas logos das redes sociais-->
+        <section id="redes">
+            <table class="rss">
+                <td><a href="#" onclick="linkedin();">
+                        <img class="image" src="Imagens/linkedin.png" alt="Linkedin">
+                    </a>
+                </td>
+                <td><a href="#" onclick="github();">
+                        <img class="image" src="Imagens/github.png" alt="GitHub">
+                    </a>
+                </td>
+                <td>
+                    <a href="#" onclick="lattes();"><img class="image" src="Imagens/lattes.png" alt="Lattes">
+                    </a>
+                </td>
+                <td><a href="#" onclick="insta();">
+                        <img class="image" src="Imagens/instagram.png" alt="Instagram">
+                    </a>
+                </td>
+            </table>
+        </section>
+        <!-- Meu javascript externo-->
+
+        <a class="prin" href="javascript:void(0)" onclick="Subir(document.body.scrollHeight)">Ir para o topo da
+            página</a>
+
+</html>
+</main>
+</body>
+<script src="js/meuscript.js"></script>
+
+</html>
